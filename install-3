@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+# This script is written by Mast. Tejas Dattatray Mote
+# For installing Sinhgad Vim(SIT)
+#
+
+echo "Installation-2"
+sudo rm /usr/share/applications/vim.desktop
+sudo cp vim.desktop /usr/share/applications/
+sudo mkdir /opt/icons
+sudo cp vim.png  /opt/icons/
+sudo desktop-file-install /usr/share/applications/vim.desktop
+echo "Installation is completed ..."

@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+# This script is written by Mast. Tejas Dattatray Mote
+# For Uninstalling Sinhgad Vim(SIT)
+#
+
+echo "Uninstallation"
+sudo rm /usr/local/bin/vim
+sudo rm /usr/share/applications/vim.desktop
+echo "Uninstallation is completed ..."

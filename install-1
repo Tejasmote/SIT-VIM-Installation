@@ -1,0 +1,26 @@
+#!/bin/bash
+#
+# This script is written by Mast. Tejas Dattatray Mote
+# For installing Sinhgad Vim(SIT)
+#
+
+echo "Installation"
+sudo apt-get install build-essential git
+git clone https://github.com/Tejasmote/ncurses.git
+git clone https://github.com/Tejasmote/vim.git
+cd ncurses
+./configure
+make -j $(nproc)
+sudo make install -j $(nproc)
+cd ../
+cd sit-vim
+./configure
+make -j $(nproc)
+sudo make install -j $(nproc)
+cd ../
+sudo rm /usr/share/applications/vim.desktop
+sudo cp vim.desktop /usr/share/applications/
+sudo mkdir /opt/icons
+sudo cp vim.png  /opt/icons/
+sudo desktop-file-install /usr/share/applications/vim.desktop
+echo "Installation is completed ..."
