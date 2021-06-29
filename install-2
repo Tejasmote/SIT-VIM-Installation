@@ -5,7 +5,7 @@
 #
 
 echo "Installation-2"
-cd sit-vim
+cd vim
 ./configure
 make -j $(nproc)
 sudo make install -j $(nproc)
