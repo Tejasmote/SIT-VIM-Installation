@@ -9,4 +9,5 @@ cd sit-vim
 ./configure
 make -j $(nproc)
 sudo make install -j $(nproc)
+cd ../
 echo "Installation is completed ..."
