@@ -1,0 +1,14 @@
+
+#!/bin/bash
+#
+# This script is written by Mast. Tejas Dattatray Mote
+# For installing Sinhgad Vim(SIT)
+#
+
+echo "Installation-2"
+cd vim
+./configure
+make -j $(nproc)
+sudo make install -j $(nproc)
+cd ../
+echo "Installation is completed ..."
