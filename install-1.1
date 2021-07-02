@@ -5,7 +5,8 @@
 #
 
 echo "Installation"
-sudo apt-get install build-essential git
+sudo yum install git
+sudo yum groupinstall "Development Tools"
 git clone https://github.com/Tejasmote/ncurses.git
 git clone https://github.com/Tejasmote/vim.git
 cd ncurses
