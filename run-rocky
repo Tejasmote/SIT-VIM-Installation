@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+# This script is written by Mast. Tejas Dattatray Mote
+# For installing Sinhgad Vim(SIT)
+#
+
+echo "Running"
+chmod +x install-1.1
+./install-1.1
+chmod +x install-2.1
+./install-2.1
+chmod +x install-3.1
+./install-3.1
+echo "Running end"
