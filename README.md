@@ -2,4 +2,5 @@
 
 ## Installation
 just run following commonds
-$ chmod +x run                                                                                                                                                       $ ./run
+$ chmod +x run                                                                                                                                                     
+$ ./run
